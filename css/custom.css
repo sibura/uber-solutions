@@ -4,10 +4,10 @@
     color: black;
     width: 80vw;
     height: 80vh;
-    margin-left: 100px;
-    margin-top: 60px;
-    border-bottom-right-radius: 35px;
-    border-top-left-radius: 35px;
+    margin-left: 93px;
+    margin-top: 50px;
+    border-bottom-right-radius: 65px;
+    border-top-left-radius: 65px;
     -webkit-animation:lightup 3s alternate infinite;
 	-webkit-animation-play-state:running;
 	-webkit-animation-delay:0.6s;

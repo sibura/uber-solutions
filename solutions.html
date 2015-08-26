@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.title {
+  background-color: #0578a3;
+  width: 500px;
+  margin-left: 10px;
+  text-align: center;
+  color: white;
+  border: 2px solid;
+  border-radius: 25px;
+  font-family: cursive;
+}
+
+.title:hover {
+  color: black;
+}
+
+.content {
+  background-color: white;
+  color: black;
+}
+
+.closer {
+  float: right;
+  position: absolute;
+  top: 10px;
+}
+
+.closer>img {
+  width: 60px;
+  height: 40px;
+  padding-top: 6px;
+}
+
+.opener {
+  float: right;
+  position: absolute;
+  top: 10px;
+  right: 430px;
+}
+
+.opener>img {
+  width: 60px;
+  height: 40px;
+  padding-top: 6px;
+}
+
+.content-toggle {
+  float: right;
+  position: absolute;
+  top: 10px;
+  right: 430px;
+  transition: all .2s;
+}
+
+.open {
+  transform: rotate(180deg);
+}
+
+.content-toggle>img {
+  width: 75px;
+  height: 50px;
+  padding-top: 6px;
+  margin-left: 10px;
+}
+
+</style>
+</head>
+<body>
+<div class="object">
+  <div class="title">
+    <p>Title
+      <p>
+        <a class="content-toggle" href="#">
+          <img src="http://www.renusweb.com/images/icons/icomoon/SVG/arrow-down3.svg" alt="arrow">
+        </a>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada felis accumsan purus suscipit, sit amet facilisis nibh convallis. Aenean molestie ante metus, vel convallis felis fermentum in. Nunc aliquet dictum varius. Integer in
+            justo vitae nulla mattis tristique eget non mauris. Quisque id libero tellus. Nulla facilisi. Nulla facilisi. Aliquam lobortis dictum nisi ut pellentesque.</p>
+        </div>
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+  $(".opener").click(function() {
+    $(".content").toggle();
+  });
+  $(".content-toggle").on('click', function(e) {
+    e.preventDefault();
+
+    $(this).toggleClass("open");
+    $(".content").toggle();
+  });
+});
+</script>
+</body>
+</html>

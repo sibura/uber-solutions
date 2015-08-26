@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html class="no-js ">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+     Other complaints
+  </title>
+  <link rel="shortcut icon" href="https://d1a3f4spazzrp4.cloudfront.net/free-candy/images/favicon.3eb352c8f26c2652495fa86bd0e29063.ico" />
+
+
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/new.css" rel="stylesheet">
+
+<div id="head" >
+        <title>Solutions</title>
+      
+     
+        <script type="text/javascript">
+            var can, ctx, step, steps = 0,
+                  delay = 20;
+     
+            function init() {
+                can = document.getElementById("MyCanvas1");
+                ctx = can.getContext("2d");
+                ctx.fillStyle = "gold";
+                ctx.font = "80pt Old English";
+                ctx.textAlign = "center";
+                ctx.textBaseline = "middle";
+                step = 0;
+                steps = can.height + 50;
+                RunTextRightToLeft();
+            }
+     
+            function RunTextRightToLeft() {
+                step++;
+                ctx.clearRect(0, 0, can.width, can.height);
+                ctx.save();
+                ctx.translate(can.width / 2, step);
+                ctx.fillText("Titans Blogamania", 0, 0);
+                ctx.restore();
+                if (step == steps)
+                    step = 0;
+                if (step < steps)
+                    var t = setTimeout('RunTextRightToLeft()', delay);
+            }
+     
+        </script>
+     
+    
+    <body onload="init();">
+        
+            
+            
+       </div></head>
+
+<body>
+<header class="contextual"><div class="logo"></div></header>
+<style>
+#head{       text-align: center;
+             color:white;
+             margin:5px;
+             background-image:url("ttn.jpg")
+             border: 3px solid green;
+             text-shadow: 5px 5px 15px black;
+             
+ }
+
+
+
+body {                 background: #00001A;
+			
+                  
+                       
+}
+
+
+
+#container{padding-left:100px;
+        background-image:url("ttn.jpg");
+        width: 70%;
+        opacity:0.8;
+        margin: 4% auto;
+
+}
+#content {
+    float: center;
+    width: 70%;
+    background-color: #b0e0e6; 
+    border:5px solid black;
+    padding: 10px;
+    margin: 10px;
+    font-family: Arial, Old English;
+    font-size:15px
+    text-shadow: 5px 5px 15px black;	
+} 
+#content2{float: center;
+    width: 70%;
+    background-color: #b0e0e6; 
+    border:5px solid black;
+    padding: 10px;
+    margin: 10px;
+    font-family: Arial, Old English;
+    font-size:15px}
+
+#content3{ float: center;
+    width: 70%;
+    background-color: #b0e0e6; 
+    border:5px solid black;
+    padding: 10px;
+    margin: 10px;
+    font-family: Arial, Old English;
+    font-size:15px}
+
+#content4{ float: center;
+    width: 70%;
+    background-color: #b0e0e6; 
+    border:5px solid black;
+    padding: 10px;
+    margin: 10px;
+    font-family: Arial, Old English;
+    font-size:15px}
+
+#content5{ float: center;
+    width: 70%;
+    background-color: #b0e0e6; 
+    border:5px solid black;
+    padding: 10px;
+    margin: 10px;
+    font-family: Arial, Old English;
+    font-size:15px}
+     
+#corner{ text-align:right;
+         font-size:10px;
+        margin-top: 0%
+}
+		
+footer{ text-align:center;
+         color:#0000FF;
+         padding:5px;
+         background-color: black;
+         opacity: 0.65;
+         position: fixed;
+         bottom:0;
+         left: 40%;
+         height: 70px;}
+
+a:link    {color:#00ff33; background-color:transparent}
+a:visited {color:#00ff33; background-color:transparent}
+a:hover   {color:#00ff33; backgroustyle="height:300px; margin-bottom: 5px;"nd-color:transparent}
+a:active  {color:#00ff33; background-color:transparent}
+
+</style>
+
+<div id="container">
+
+<div id="content" >
+
+<p><h1><a href="what_have_we_learned.html"> Ratings issue</a><div id="corner">Published:26 September 2014</div></h1>We have learned that git works by reading a local code repository on your computer and mirroring that code elsewhere<a href="what_have_we_learned.html">...see more...</a>
+
+</p>
+</div>
+<div id="content2">
+
+<p><h1><a href="my_codex_equipment.html"> Issue with my device</a><div id="corner">Published:25 September 2014</div></h1>Working space in the IT industry is always packed with loads of tech equipment. These equipment range from the smallest <a href="my_codex_equipment.html">...see more...</a>
+
+</p>
+</div>
+<div id="content3">
+
+<p><h1><a href="why_titans.html"> My account is not active</a><div id="corner">Published:22 September 2014</div></h1> CodeX is a great technological platform to learn about one of the
+
+most demanding technological sectors of Information Technology, Software<a href="why_titans.html">...see more...</a>
+
+</p>
+</div>
+<div id="content4">
+
+<p><h1><a href="why_titans.html"> Payment issue</a><div id="corner">Published:22 September 2014</div></h1> CodeX is a great technological platform to learn about one of the
+
+most demanding technological sectors of Information Technology, Software<a href="why_titans.html">...see more...</a>
+
+</p>
+</div>
+<div id="content5">
+
+<p><h1><a href="why_titans.html"> Return device</a><div id="corner">Published:22 September 2014</div></h1> CodeX is a great technological platform to learn about one of the
+
+most demanding technological sectors of Information Technology, Software<a href="why_titans.html">...see more...</a>
+
+</p>
+</div>
+</div>
+</div>
+<pages border="1" style="width:100%">
+
+
+</body>
+</html> 
