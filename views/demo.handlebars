@@ -20,7 +20,7 @@ body {
 			margin:0; 
 			padding:0; 
 			text-align:center; /* center div in IE */
-			for ie div centering, reset in wrapper  */
+			for ie div centering, reset in wrapper  
 		}
 #wrapper {
 			width:600px; 
@@ -46,11 +46,11 @@ body {
 			background:url(overlay.png) repeat; 
 			text-align:center;
 		}
-#lightbox p {
-			text-align:right; 
-			color:#fff; 
+#agentp {
+			
+			color:black; 
 			margin-right:20px; 
-			font-size:12px; 
+			font-size:4vh; 
 		}
 #lightbox img {
 			box-shadow:0 0 25px #111;
@@ -75,10 +75,12 @@ body {
 			text-align:left;
 }
              #agent{
-             margin-left:700px;
+             margin-left:50px;
+             font-size:4vh;
       }  
                       #rating{
-             margin-left:790px;
+             margin-left:100px;
+             font-size:4vh;
       }  
 
   ul {
@@ -96,17 +98,35 @@ ul li {
     text-align:center;
     margin-top: 35px;
 
+}  
+
+.row1{
+    background-color: #19A3FF;
+    font-size: 20px;
+    color: black;
+    width: 80vw;
+    height: auto;
+    margin-left: 100px;
+    margin-top: 60px;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    -webkit-animation:lightup 3s alternate infinite;
+	-webkit-animation-play-state:running;
+	-webkit-animation-delay:0.6s;
+	-moz-animation:lightup 3s alternate infinite;
+	-moz-animation-play-state:running;
+	-moz-animation-delay:0.3s;
 }    
 
 		</style>
 	</head>
 <body>
 <header class="contextual"><div class="logo"></div></header>
-<div class="row">
+<div class="row1">
 
 		<ul>
 			<li>
-              <p>Ridesharing and livery drivers in the U.S. are screened through a process that includes county, federal,and multi-state criminal background checks. Uber also reviews drivers’ motor vehicle records throughout their time driving with Uber.</p>
+              <p id="agentp">Ridesharing and livery drivers in the U.S. are screened through a process that includes county, federal,and multi-state criminal background checks. Uber also reviews drivers’ motor vehicle records throughout their time driving with Uber.</p>
 			</li>	
 		</ul>
    <p id="agent">Agent:Lindani Pani</p>

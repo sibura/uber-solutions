@@ -310,7 +310,7 @@ textarea:focus {
 </div>
 <div id="content2">
 
-<p><h1><a href="#"> Issue with my device</a><div id="corner">Published:27 August 2015</div></h1>If the device is not responding to the app it may be a network error or the ... <a href="#"><button>see more</button></a>
+<p><h1><a href="#"> Issue with my device</a><div id="corner">Published:27 August 2015</div></h1>If the device is not responding please check that  ... <a href="/devices"><button>see more</button></a>
 
 </p>
 </div>
