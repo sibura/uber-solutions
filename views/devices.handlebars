@@ -163,11 +163,11 @@ ul li {
          type='audio/ogg; codecs=vorbis'>
  Your user agent does not support the HTML5 Audio element.
 </audio><br>
-<button type="button" onclick="aud_play_pause()">Play/Stop</button>
-<button onclick="setHalfVolume()" type="button">volume Down</button>
-<button onclick="setFullVolume()" type="button">volume Up</button><br> 
+<button id="myAudio" type="button" onclick='responsiveVoice.speak("If the device is not responding please check that you have a valid internet conection and check if you have data bundles. Make sure you have inserted the correct username and reference number.");'>Speak</button>
 </p>
 <br>
+<br>
+<a href="/back"><button type="button" class="btn btn-primary" align="center">BACK</button></a>
 </div> <!-- #/wrapper -->
 <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
 <script>
@@ -223,7 +223,7 @@ jQuery(document).ready(function($) {
 });
 </script>
 <script>
-function aud_play_pause() {
+function responsiveVoice.speak() {
   var myAudio = document.getElementById("myAudio");
   if (myAudio.paused) {
     myAudio.play();
@@ -240,5 +240,6 @@ function setFullVolume() {
     myAudio.volume = 1.0;
 } 
 </script>
+<script src='http://code.responsivevoice.org/responsivevoice.js'></script>
 </body>
 </html>

@@ -304,31 +304,31 @@ textarea:focus {
 
 <div id="content" >
 
-<p><h1><a href="#"> Background Checks</a><div id="corner">Published:26 August 2015</div></h1>Ridesharing and livery drivers in the U.S. are screened through a process that  ...</h1><a href="/more"><button id="seeMore">see more</button></a>
+<p><h1><a href="#"> Background Checks</a><div id="corner">Published:26 August 2015</div></h1>Ridesharing and livery drivers in the U.S. are screened through a process that  ...</h1><a href="/more"><button id="seeMore" class="btn btn-primary">see more</button></a>
 
 </p>
 </div>
 <div id="content2">
 
-<p><h1><a href="#"> Issue with my device</a><div id="corner">Published:27 August 2015</div></h1>If the device is not responding please check that  ... <a href="/devices"><button>see more</button></a>
+<p><h1><a href="#"> Issue with my device</a><div id="corner">Published:27 August 2015</div></h1>If the device is not responding please check that you have a valid ... <a href="/devices"><button class="btn btn-primary">see more</button class="btn btn-primary"></a>
 
 </p>
 </div>
 <div id="content3">
 
-<p><h1><a href="#"> My account is not active</a><div id="corner">Published:26 August 2015</div></h1> Be sure to check that you entered the right username and reference ...<a href="#"><button>see more</button></a>
+<p><h1><a href="#"> My account is not active</a><div id="corner">Published:26 August 2015</div></h1> Be sure to check that you entered the right username and reference ...<a href="#"><button class="btn btn-primary">see more</button></a>
 
 </p>
 </div>
 <div id="content4">
 
-<p><h1><a href="#"> Payment issue</a><div id="corner">Published:27 September 2015</div></h1> The account may be inactive for a few minutes when there is alot of traffic ...<a href="#"><button>see more</button></a>
+<p><h1><a href="#"> Payment issue</a><div id="corner">Published:27 September 2015</div></h1> The account may be inactive for a few minutes when there is alot of traffic ...<a href="#"><button class="btn btn-primary">see more</button></a>
 
 </p>
 </div>
 <div id="content5">
 
-<p><h1><a href="#"> Return device</a><div id="corner">Published:22 August 2015</div></h1> If you are not happy with the device you may return it within 7 working days ...<a href="#"><button>see more</button></a>
+<p><h1><a href="#"> Return device</a><div id="corner">Published:22 August 2015</div></h1> If you are not happy with the device you may return it within 7 working days ...<a href="#"><button class="btn btn-primary">see more</button></a>
 
 </p>
 </div>

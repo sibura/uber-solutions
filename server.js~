@@ -1,34 +1,83 @@
 var express = require('express');
 var exphbs  = require('express-handlebars');
 var app = express();
-bodyParser = require('body-parser'),
+bodyParser = require('body-parser');
+    http = require('http');
+    app = module.exports.app = express()
+    io = require('socket.io')
+
+    var server = http.createServer(app);
+    var io = require('socket.io').listen(server);  //pass a http.Server instance
+    server.listen(8080);  //
+
 
 app.use(express.static('public'));
+var users = {};
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-var fs = require('fs');
-var user = {};
-var checkUser = function(req, res, next){
-  if (req.session.username){
-    return next();
-    res.render("index",{layout: false})
-  }
-  else{// the user is not logged in redirect him to the login page
-    res.redirect('/login');
-  }
-};
 
-//user sign up
+app.get('/users', function(req, res){
+  res.send(users);
+});
+
+
+io.sockets.on('connection', function(socket){
+  //socket.broadcast.emit('hi');
+
+  
+  socket.on('chat message', function(msg){
+     io.emit('chat message', msg);
+       console.log('message: ' + msg);
+  });
+ 
+
+  socket.on('login', function(msg){
+
+      console.log("username : " + msg.username);
+      users[msg.username] = socket.id
+      //msg.username
+      socket.join(msg.username, function(err){
+        console.log("joined : " + err)
+      });
+
+  });
+
+  socket.on('msg-to', function(msg){
+
+    try {
+
+      console.log('send to : =' + msg.username + "=");
+      console.log(msg.msg);
+
+      //
+      socket.in(msg.username).emit('too', msg.msg);
+
+    }
+    catch(e){
+      console.log("error : " + e);
+    }
+
+    
+
+  });
+
+});
+
 app.get("/signup", function(req, res){
   res.render("signup");
 
 })
 
+app.get("/back", function(req, res){
+  res.render("index",{layout:false});
+
+})
+
 app.post("/signup", function(req, res){
-  res.render("index");
+  res.render("index",{layout: false});
 
 })
 
@@ -66,4 +115,3 @@ app.post("/home", function(req, res){
 
 });
 
-app.listen(5000);

@@ -118,6 +118,12 @@ ul li {
 	-moz-animation-delay:0.3s;
 }    
 
+.row1:hover{
+        -webkit-animation-play-state: paused;
+	-moz-animation-play-state: paused;
+}
+
+
 		</style>
 	</head>
 <body>
@@ -158,11 +164,10 @@ ul li {
          type='audio/ogg; codecs=vorbis'>
  Your user agent does not support the HTML5 Audio element.
 </audio><br>
-<button type="button" onclick="aud_play_pause()">Play/Stop</button>
-<button onclick="setHalfVolume()" type="button">volume Down</button>
-<button onclick="setFullVolume()" type="button">volume Up</button><br> 
+<button id="myAudio" type="button" onclick='responsiveVoice.speak("Ridesharing and livery drivers in the U.S. are screened through a process that includes county, federal,and multi-state criminal background checks. Uber also reviews drivers’ motor vehicle records throughout their time driving with Uber.");'>Speak</button>
 </p>
 <br>
+<a href="/back"><button type="button" class="btn btn-primary" align="center">BACK</button></a>
 </div> <!-- #/wrapper -->
 <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
 <script>

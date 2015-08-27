@@ -304,31 +304,31 @@ textarea:focus {
 
 <div id="content" >
 
-<p><h1><a href="#"> Background Checks</a><div id="corner">Published:26 August 2015</div></h1>Ridesharing and livery drivers in the U.S. are screened through a process that  ...</h1><a href="/more"><button id="seeMore">see more</button></a>
+<p><h1><a href="#"> Background Checks</a><div id="corner">Published:26 August 2015</div></h1>Ridesharing and livery drivers in the U.S. are screened through a process that  ...</h1><a href="/more"><button id="seeMore" class="btn btn-primary">see more</button></a>
 
 </p>
 </div>
 <div id="content2">
 
-<p><h1><a href="#"> Issue with my device</a><div id="corner">Published:27 August 2015</div></h1>If the device is not responding please check that you have a valid ... <a href="/devices"><button>see more</button></a>
+<p><h1><a href="#"> Issue with my device</a><div id="corner">Published:27 August 2015</div></h1>If the device is not responding please check that you have a valid ... <a href="/devices"><button class="btn btn-primary">see more</button class="btn btn-primary"></a>
 
 </p>
 </div>
 <div id="content3">
 
-<p><h1><a href="#"> My account is not active</a><div id="corner">Published:26 August 2015</div></h1> Be sure to check that you entered the right username and reference ...<a href="#"><button>see more</button></a>
+<p><h1><a href="#"> My account is not active</a><div id="corner">Published:26 August 2015</div></h1> Be sure to check that you entered the right username and reference ...<a href="#"><button class="btn btn-primary">see more</button></a>
 
 </p>
 </div>
 <div id="content4">
 
-<p><h1><a href="#"> Payment issue</a><div id="corner">Published:27 September 2015</div></h1> The account may be inactive for a few minutes when there is alot of traffic ...<a href="#"><button>see more</button></a>
+<p><h1><a href="#"> Payment issue</a><div id="corner">Published:27 September 2015</div></h1> The account may be inactive for a few minutes when there is alot of traffic ...<a href="#"><button class="btn btn-primary">see more</button></a>
 
 </p>
 </div>
 <div id="content5">
 
-<p><h1><a href="#"> Return device</a><div id="corner">Published:22 August 2015</div></h1> If you are not happy with the device you may return it within 7 working days ...<a href="#"><button>see more</button></a>
+<p><h1><a href="#"> Return device</a><div id="corner">Published:22 August 2015</div></h1> If you are not happy with the device you may return it within 7 working days ...<a href="#"><button class="btn btn-primary">see more</button></a>
 
 </p>
 </div>
@@ -339,34 +339,20 @@ textarea:focus {
    <a href="#"><h1>Other complaints</h1></a>
   </header>
 
-  <div id="box" >
-    <label class="desc" id="title3" for="Field3">
-      Complaint
-    </label>
-    <div>
-      <input id="Field3" name="Field3" type="email" spellcheck="false" value="" maxlength="255" tabindex="3">
-   </div>
-  </div>
+   
 
-  <div id="description">
-    <label class="desc" id="title4" for="Field4">
-      Description
-    </label>
-
-    <div>
-      <textarea rows="4" cols="20" ></textarea>
-    </div>
-  </div>
-
-
-  <div>
-        <div>
-        <input id="saveForm" name="saveForm" type="submit" value="Submit">
-        <button>Cancel</button>
-    </div>
-    </div>
+  
 
 </form>
+<ul id="messages"></ul>
+      <div class="form-group">
+        <label for="usr">User:</label>
+        <input type="text" placeholder = "username less than 25 letters"maxlength="25"class="form-control" id="u"><button id="login" button type="button" class="btn btn-default">Submit</button>
+
+    <div class="form-group">
+    <label for="usr">Complaint Description:</label>
+    <input type="text" class="form-control" placeholder = "agent-type message"id="m"><button id="chat" button type="button" class="btn btn-primary">Send</button>
+  </div>
 </div>
 </div>
 </div>
