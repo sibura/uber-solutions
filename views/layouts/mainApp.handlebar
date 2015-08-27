@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Nelisa's Spaza Shop</title>
+          <link rel="icon" type="image/png" href="./icon.png">
+
+        <!-- Bootstrap Core CSS -->
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/user.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="/css/simple-sidebar.css" rel="stylesheet">
+        <link href="/css/half-slider.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+         <li>
+                                    <a href="/login">Home</a>
+                                </li>
+
+        <div id="wrapper">
+
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+
+                        <img src="/nelisa.png" class=".img-responsive" width="250px;"/>
+
+                    <li>
+                        <a href="/home">Refresh <i class="fa fa-refresh"></i>
+</a>
+                    </li>
+                    <li>
+                     <a href="javascript:;" data-toggle="collapse" data-target="#new">Graphs <i class="fa fa-bar-chart"></i>
+</i></a>
+                            <ul id="new" class="collapse">
+                                <li>
+                                    <a href="productGraph">Product Graph</a>
+                                </li>
+                                <li>
+                                    <a href="graph">Category Graph</a>
+                                </li>
+                            </ul>
+                        </li>
+                    <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#demo">Products <i class="fa fa-fw fa-caret-down"></i></a>
+                            <ul id="demo" class="collapse">
+                                <li>
+                                    <a href="products_list">Product List</a>
+                                </li>
+                                <li>
+                                    <a href="list">Grouped Product Sales</a>
+                                </li>
+                                <li>
+                                    <a href="salesPerProduct">Sales Per Product</a>
+                                </li>
+                                <li>
+                                    <a href="popular">Most Popular Product</a>
+                                </li>
+                                <li>
+                                    <a href="leastpopular">Least Popular Product</a>
+                                </li>
+                                <li>
+                                    <a href="earningsPerProduct">Earnings Per Product</a>
+                                </li>
+                            </ul>
+                        </li>
+                    <li>
+                    
+                                   <a href="/logout">Logout <i class="fa fa-sign-out"></i>
+</a>
+                        </li>
+                </ul>
+
+
+            </div>
+            <!-- /#sidebar-wrapper -->
+            
+            <!-- /#page-content-wrapper -->
+
+        </div>
+
+{{body}}
+    </body>
+
+    </html>

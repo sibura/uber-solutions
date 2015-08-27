@@ -1,0 +1,73 @@
+.row{
+    background-color: #19A3FF;
+    font-size: 20px;
+    color: black;
+    width: 80vw;
+    height: 80vh;
+    margin-left: 100px;
+    margin-top: 60px;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    -webkit-animation:lightup 3s alternate infinite;
+	-webkit-animation-play-state:running;
+	-webkit-animation-delay:0.6s;
+	-moz-animation:lightup 3s alternate infinite;
+	-moz-animation-play-state:running;
+	-moz-animation-delay:0.3s;
+}
+
+.row:hover{
+        -webkit-animation-play-state: paused;
+	-moz-animation-play-state: paused;
+}
+#text-center{
+    width: inherit;
+    height: inherit;
+    margin-left: 300px;
+    margin-top: 70px;
+}
+
+#problem{
+    width:180px;
+}
+
+#reference{
+   width:180px;
+}
+#enter{
+    width:180px;
+    margin-right: 100px;
+}
+body{
+    background: #00001A;
+    transition:all 2s ease-in-out;
+}
+
+@-webkit-keyframes lightup{
+	0%{
+		box-shadow: 1px 1px 10px 3px black;
+	}
+	50%{
+		transform:scale(1.02);
+		transition:transform 1s linear;
+	}
+	100%{
+		box-shadow: 1px 1px 50px 10px black;
+	}
+}
+@-moz-keyframes lightup{
+	0%{
+		box-shadow: 1px 1px 10px 3px black;
+	}
+	50%{
+		transform:scale(1.02);
+		transition:transform 1s linear;
+	}
+	100%{
+		box-shadow: 1px 1px 50px 10px black;
+	}
+}
+
+h1{
+    text-align: center;
+}
