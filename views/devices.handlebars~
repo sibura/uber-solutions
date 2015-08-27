@@ -162,8 +162,10 @@ ul li {
  <source src="character_ft_oskido_mono_t_inxeba_lendoda_mp3_34038.oga"
          type='audio/ogg; codecs=vorbis'>
  Your user agent does not support the HTML5 Audio element.
-</audio>
+</audio><br>
 <button type="button" onclick="aud_play_pause()">Play/Stop</button>
+<button onclick="setHalfVolume()" type="button">volume Down</button>
+<button onclick="setFullVolume()" type="button">volume Up</button><br> 
 </p>
 </div> <!-- #/wrapper -->
 <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
@@ -229,13 +231,13 @@ function aud_play_pause() {
   }
 }
 
-function volumeUp() { 
-    myVideo.width = 320; 
+function setHalfVolume() { 
+    myAudio.volume = 0.2;
 } 
-
-function volumeDown() { 
-    myVideo.width = 420; 
-}
+  
+function setFullVolume() { 
+    myAudio.volume = 1.0;
+} 
 </script>
 </body>
 </html>
