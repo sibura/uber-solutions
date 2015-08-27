@@ -27,6 +27,11 @@ app.get("/signup", function(req, res){
 
 })
 
+app.post("/signup", function(req, res){
+  res.render("index");
+
+})
+
 app.get("/login", function(req, res){
   res.render("login", {layout: false});
 
@@ -42,12 +47,17 @@ app.get("/", function(req, res){
 
 })
 
+app.get("/devices", function(req, res){
+  res.render("devices",{layout: false});
+
+})
+
 app.post("/", function(req, res){
   res.render("index",{layout: false});
 
 })
 
-app.get('/home',function(req,res){
+app.get('/more',function(req,res){
 	res.render("demo",{layout: false});
 })
 

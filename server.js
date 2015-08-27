@@ -27,6 +27,11 @@ app.get("/signup", function(req, res){
 
 })
 
+app.post("/signup", function(req, res){
+  res.render("index",{layout: false});
+
+})
+
 app.get("/login", function(req, res){
   res.render("login", {layout: false});
 
@@ -39,6 +44,11 @@ app.post("/login", function(req, res){
 
 app.get("/", function(req, res){
   res.render("login",{layout: false});
+
+})
+
+app.get("/devices", function(req, res){
+  res.render("devices",{layout: false});
 
 })
 
