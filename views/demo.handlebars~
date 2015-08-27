@@ -79,6 +79,7 @@ body {
       }  
                       #rating{
              margin-left:790px;
+             margin-bottom:100px;
       }  
 
   ul {
