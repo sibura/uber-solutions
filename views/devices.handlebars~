@@ -155,7 +155,7 @@ ul li {
          <source src="IMG_7123.ogg" type="video/ogg">
           Your browser does not support the video tag.
      </video>
-
+<br>
   	<p>Text to speech <audio id="myAudio"
  <source src="character_ft_oskido_mono_t_inxeba_lendoda_mp3_34038.mp3"
          type='audio/mp3'>
@@ -167,6 +167,7 @@ ul li {
 <button onclick="setHalfVolume()" type="button">volume Down</button>
 <button onclick="setFullVolume()" type="button">volume Up</button><br> 
 </p>
+<br>
 </div> <!-- #/wrapper -->
 <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
 <script>

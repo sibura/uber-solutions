@@ -118,6 +118,12 @@ ul li {
 	-moz-animation-delay:0.3s;
 }    
 
+.row1:hover{
+        -webkit-animation-play-state: paused;
+	-moz-animation-play-state: paused;
+}
+
+
 		</style>
 	</head>
 <body>
@@ -151,11 +157,18 @@ ul li {
           Your browser does not support the video tag.
      </video>
 
-  		<p>Text/Speech :
-        <a href="#">
-          <span class="glyphicon glyphicon-volume-up"></span>
-        </a>
-      </p>
+  <p>Text to speech <audio id="myAudio"
+ <source src="character_ft_oskido_mono_t_inxeba_lendoda_mp3_34038.mp3"
+         type='audio/mp3'>
+ <source src="character_ft_oskido_mono_t_inxeba_lendoda_mp3_34038.oga"
+         type='audio/ogg; codecs=vorbis'>
+ Your user agent does not support the HTML5 Audio element.
+</audio><br>
+<button type="button" onclick="aud_play_pause()">Play/Stop</button>
+<button onclick="setHalfVolume()" type="button">volume Down</button>
+<button onclick="setFullVolume()" type="button">volume Up</button><br> 
+</p>
+<br>
 </div> <!-- #/wrapper -->
 <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
 <script>
@@ -209,6 +222,24 @@ jQuery(document).ready(function($) {
 	});
 
 });
+</script>
+<script>
+function aud_play_pause() {
+  var myAudio = document.getElementById("myAudio");
+  if (myAudio.paused) {
+    myAudio.play();
+  } else {
+    myAudio.pause();
+  }
+}
+
+function setHalfVolume() { 
+    myAudio.volume = 0.2;
+} 
+  
+function setFullVolume() { 
+    myAudio.volume = 1.0;
+} 
 </script>
 </body>
 </html>
