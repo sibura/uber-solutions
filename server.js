@@ -27,18 +27,18 @@ app.get("/signup", function(req, res){
 
 })
 
-app.get("/signup", function(req, res){
-  res.render("home");
-
-})
-
 app.get("/login", function(req, res){
-  res.render("index", {layout: false});
+  res.render("login", {layout: false});
 
 })
 
-app.post("/home", function(req, res){
+app.post("/login", function(req, res){
   res.render("home");
+
+})
+
+app.get("/", function(req, res){
+  res.render("login",{layout: false});
 
 })
 
@@ -47,24 +47,13 @@ app.post("/", function(req, res){
 
 })
 
-app.post("/index", function(req, res){
-  res.render("index", {layout: false});
-
+app.get('/more',function(req,res){
+	res.render("demo",{layout: false});
 })
 
-app.get("/demo", function(req, res){
-  res.render("demo",{layout: false});
-
-})
-
-app.post("/index", function(req, res){
-  res.render("demo");
+app.post("/home", function(req, res){
+  res.render("home");
 
 });
-
-app.post("/signup", function(req, res){
-  res.render("index", {layout: false});
-
-})
 
 app.listen(5000);
