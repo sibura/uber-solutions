@@ -67,4 +67,13 @@ app.post("/signup", function(req, res){
 
 })
 
+app.get('/', function(req, res) {
+
+    console.log(req.query.status);  
+
+    res.render('login')
+      
+});
+
+
 app.listen(5000);
