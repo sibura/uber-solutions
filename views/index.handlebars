@@ -367,4 +367,43 @@ $(document).ready(
         });
     });
 </script>
+<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script>
+
+  var socket = io();
+   $('#chat').click(function(){
+       //socket.emit('chat message', );
+       //$('#m').val('');
+
+       var parts = $('#m').val().split("-");
+
+       var chatData = {
+          username : parts[0].trim(),
+          msg : parts[1].trim()
+       };
+
+   socket.emit('msg-to', chatData);
+
+
+       return false;
+   });
+
+   $('#login').click(function() {
+      
+      console.log("...");
+
+      var username = $('#u').val().trim();
+
+      socket.emit('login', {username : username})
+
+   });
+
+  socket.on('too', function(msg){
+
+      $('#messages').append($('<li>').text(msg));
+
+  });
+    
+</script>
 </html> 

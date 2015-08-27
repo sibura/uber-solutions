@@ -339,34 +339,20 @@ textarea:focus {
    <a href="#"><h1>Other complaints</h1></a>
   </header>
 
-  <div id="box" >
-    <label class="desc" id="title3" for="Field3">
-      Complaint
-    </label>
-    <div>
-      <input id="Field3" name="Field3" type="email" spellcheck="false" value="" maxlength="255" tabindex="3">
-   </div>
-  </div>
+   
 
-  <div id="description">
-    <label class="desc" id="title4" for="Field4">
-      Description
-    </label>
-
-    <div>
-      <textarea rows="4" cols="20" ></textarea>
-    </div>
-  </div>
-
-
-  <div>
-        <div>
-        <input id="saveForm" name="saveForm" type="submit" value="Submit">
-        <button>Cancel</button>
-    </div>
-    </div>
+  
 
 </form>
+<ul id="messages"></ul>
+      <div class="form-group">
+        <label for="usr">User:</label>
+        <input type="text" placeholder = "username less than 25 letters"maxlength="25"class="form-control" id="u"><button id="login" button type="button" class="btn btn-default">Submit</button>
+
+    <div class="form-group">
+    <label for="usr">Complaint Description:</label>
+    <input type="text" class="form-control" placeholder = "agent-type message"id="m"><button id="chat" button type="button" class="btn btn-primary">Send</button>
+  </div>
 </div>
 </div>
 </div>
@@ -381,4 +367,6 @@ $(document).ready(
         });
     });
 </script>
+<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
 </html> 
