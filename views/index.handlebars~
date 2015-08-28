@@ -14,9 +14,7 @@
 <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/new.css" rel="stylesheet">
-</head>
-<body onload="init();">
-<div id="head" >
+
         <title>Solutions</title>
       
      
@@ -56,10 +54,10 @@
         
             
             
-       </div></head>
 
-<body>
-<header class="contextual"><div class="logo"></div></header>
+
+
+
 <style>
 #head{       text-align: center;
              color:white;
@@ -309,7 +307,9 @@ textarea:focus {
     font-size:3vh;
 }
 </style>
-
+</head>
+<body>
+<header class="contextual"><div class="logo"></div></header>
 <div id="container">
 
 <div id="content" >
