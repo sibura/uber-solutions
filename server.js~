@@ -2,13 +2,15 @@ var express = require('express');
 var exphbs  = require('express-handlebars');
 var app = express();
 bodyParser = require('body-parser');
-    http = require('http');
-    app = module.exports.app = express()
-    io = require('socket.io')
+http = require('http');
+app = module.exports.app = express()
+io = require('socket.io')
 
-    var server = http.createServer(app);
-    var io = require('socket.io').listen(server);  //pass a http.Server instance
-    server.listen(5000);  //
+var session = require('express-session')
+
+var server = http.createServer(app);
+var io = require('socket.io').listen(server);  //pass a http.Server instance
+    server.listen(5002);  //
 
 
 app.use(express.static('public'));
@@ -17,6 +19,13 @@ app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+
+app.use(session({
+  secret: 'keyboard cat',
+  resave: false,
+  saveUninitialized: true
+}))
 
 
 app.get('/users', function(req, res){
@@ -83,13 +92,24 @@ app.post("/signup", function(req, res){
 
 app.get("/login", function(req, res){
   res.render("login", {layout: false});
-
 })
 
 app.post("/login", function(req, res){
+
   res.render("home");
 
-})
+});
+
+
+app.get("/logout", function(req, res){
+
+  delete req.session.username;
+
+  //res.render("home");
+
+  res.redirect("/");
+
+});
 
 app.get("/", function(req, res){
   res.render("login",{layout: false});
@@ -102,7 +122,12 @@ app.get("/devices", function(req, res){
 })
 
 app.post("/", function(req, res){
-  res.render("index",{layout: false});
+
+  //console.log(req.body);
+
+  req.session.username = req.body.Username;
+
+  res.render("index",{layout: false, username : req.session.username});
 
 })
 
@@ -113,5 +138,8 @@ app.get('/more',function(req,res){
 app.post("/home", function(req, res){
   res.render("home");
 
+});
+app.get('/account', function(req,res){
+   res.render("account",{layout:false});
 });
 

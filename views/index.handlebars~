@@ -311,34 +311,34 @@ textarea:focus {
 <body>
 <header class="contextual"><div class="logo"></div></header>
 <div id="container">
+<div id="content3">
 
+<p><h1><a href="/account"> My account is not active</a><div id="corner">Published:26 August 2015</div></h1><h1  id="text"> Here is is what to do. Call 0831235467 or email support ...</h1><a href="#"><button class="btn btn-primary" id="text">see more</button></a>
+
+</p>
+</div>
+
+<div id="content2">
+
+<p><h1><a href="#"> Issue with my device</a><div id="corner">Published:27 August 2015</div></h1><h1  id="text">If the device is not responding please check that you have a valid ... </h1><a href="/devices"><button class="btn btn-primary" id="text">see more</button class="btn btn-primary"></a>
+
+</p>
+</div>
 <div id="content" >
 
 <p><h1><a href="#"> Background Checks</a><div id="corner">Published:26 August 2015</div></h1><h1  id="text">Ridesharing and livery drivers in the U.S. are screened through a process that  ...</h1><a href="/more"><button class="btn btn-primary" id="text">see more</button></a>
 
 </p>
 </div>
-<div id="content2">
-
-<p><h1><a href="#"> Issue with my device</a><div id="corner">Published:27 August 2015</div></h1><h1  id="text">If the device is not responding please check that you have a valid ... <a href="/devices"><button class="btn btn-primary" id="text">see more</button class="btn btn-primary"></a>
-
-</p>
-</div>
-<div id="content3">
-
-<p><h1><a href="#"> My account is not active</a><div id="corner">Published:26 August 2015</div></h1><h1  id="text"> Be sure to check that you entered the right username and reference ...<a href="#"><button class="btn btn-primary" id="text">see more</button></a>
-
-</p>
-</div>
 <div id="content4">
 
-<p><h1><a href="#"> Payment issue</a><div id="corner">Published:27 September 2015</div></h1><h1  id="text"> The account may be inactive for a few minutes when there is alot of traffic ...<a href="#"><button class="btn btn-primary" id="text">see more</button></a>
+<p><h1><a href="#"> Payment issue</a><div id="corner">Published:27 September 2015</div></h1><h1  id="text"> The account may be inactive for a few minutes when there is alot of traffic ...</h1><a href="#"><button class="btn btn-primary" id="text">see more</button></a>
 
 </p>
 </div>
 <div id="content5">
 
-<p><h1><a href="#"> Return device</a><div id="corner">Published:22 August 2015</div></h1><h1  id="text"> If you are not happy with the device you may return it within 7 working days ...<a href="#"><button class="btn btn-primary" id="text">see more</button></a>
+<p><h1><a href="#"> Return device</a><div id="corner">Published:22 August 2015</div></h1><h1  id="text"> If you are not happy with the device you may return it within 7 working days ...</h1><a href="#"><button class="btn btn-primary" id="text">see more</button></a>
 
 </p>
 </div>

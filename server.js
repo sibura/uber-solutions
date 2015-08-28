@@ -139,4 +139,7 @@ app.post("/home", function(req, res){
   res.render("home");
 
 });
+app.get('/account', function(req,res){
+   res.render("account",{layout:false});
+});
 
