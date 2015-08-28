@@ -14,7 +14,8 @@
 <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/new.css" rel="stylesheet">
-
+</head>
+<body onload="init();">
 <div id="head" >
         <title>Solutions</title>
       
@@ -51,7 +52,7 @@
         </script>
      
     
-    <body onload="init();">
+    
         
             
             
@@ -88,7 +89,8 @@ body {                 background: #00001A;
 }
 #content {
     float: center;
-    width: 70%;
+    width: 60vw;
+    height:auto;
     background-color: #19A3FF; 
     border:5px solid black;
     border-bottom-right-radius: 65px;
@@ -100,7 +102,8 @@ body {                 background: #00001A;
     text-shadow: 5px 5px 15px black;    
 } 
 #content2{float: center;
-    width: 70%;
+    width: 60vw;
+    height:auto;
     background-color: #19A3FF; 
     border:5px solid black;
     border-bottom-right-radius: 65px;
@@ -111,7 +114,8 @@ body {                 background: #00001A;
     font-size:15px}
 
 #content3{ float: center;
-    width: 70%;
+    width: 60vw;
+    height:auto;
     background-color: #19A3FF; 
     border:5px solid black;
     border-bottom-right-radius: 65px;
@@ -122,7 +126,8 @@ body {                 background: #00001A;
     font-size:15px}
 
 #content4{ float: center;
-    width: 70%;
+    width: 60vw;
+    height:auto;
     background-color: #19A3FF; 
     border:5px solid black;
     border-bottom-right-radius: 65px;
@@ -133,7 +138,8 @@ body {                 background: #00001A;
     font-size:15px}
 
 #content5{ float: center;
-    width: 70%;
+    width: 60vw;
+    height:auto;
     background-color: #19A3FF;
     border:5px solid black;
     border-bottom-right-radius: 65px;
@@ -144,7 +150,8 @@ body {                 background: #00001A;
     font-size:15px}
   
 #content6{ float: center;
-    width: 70%;
+    width: 60vw;
+    height:auto;
     background-color: #19A3FF;
     border:5px solid black;
     border-bottom-right-radius: 65px;
@@ -298,37 +305,40 @@ textarea:focus {
   }
 }
 
+#text{
+    font-size:3vh;
+}
 </style>
 
 <div id="container">
 
 <div id="content" >
 
-<p><h1><a href="#"> Background Checks</a><div id="corner">Published:26 August 2015</div></h1>Ridesharing and livery drivers in the U.S. are screened through a process that  ...</h1><a href="/more"><button id="seeMore" class="btn btn-primary">see more</button></a>
+<p><h1><a href="#"> Background Checks</a><div id="corner">Published:26 August 2015</div></h1><h1  id="text">Ridesharing and livery drivers in the U.S. are screened through a process that  ...</h1><a href="/more"><button class="btn btn-primary" id="text">see more</button></a>
 
 </p>
 </div>
 <div id="content2">
 
-<p><h1><a href="#"> Issue with my device</a><div id="corner">Published:27 August 2015</div></h1>If the device is not responding please check that you have a valid ... <a href="/devices"><button class="btn btn-primary">see more</button class="btn btn-primary"></a>
+<p><h1><a href="#"> Issue with my device</a><div id="corner">Published:27 August 2015</div></h1><h1  id="text">If the device is not responding please check that you have a valid ... <a href="/devices"><button class="btn btn-primary" id="text">see more</button class="btn btn-primary"></a>
 
 </p>
 </div>
 <div id="content3">
 
-<p><h1><a href="#"> My account is not active</a><div id="corner">Published:26 August 2015</div></h1> Be sure to check that you entered the right username and reference ...<a href="#"><button class="btn btn-primary">see more</button></a>
+<p><h1><a href="#"> My account is not active</a><div id="corner">Published:26 August 2015</div></h1><h1  id="text"> Be sure to check that you entered the right username and reference ...<a href="#"><button class="btn btn-primary" id="text">see more</button></a>
 
 </p>
 </div>
 <div id="content4">
 
-<p><h1><a href="#"> Payment issue</a><div id="corner">Published:27 September 2015</div></h1> The account may be inactive for a few minutes when there is alot of traffic ...<a href="#"><button class="btn btn-primary">see more</button></a>
+<p><h1><a href="#"> Payment issue</a><div id="corner">Published:27 September 2015</div></h1><h1  id="text"> The account may be inactive for a few minutes when there is alot of traffic ...<a href="#"><button class="btn btn-primary" id="text">see more</button></a>
 
 </p>
 </div>
 <div id="content5">
 
-<p><h1><a href="#"> Return device</a><div id="corner">Published:22 August 2015</div></h1> If you are not happy with the device you may return it within 7 working days ...<a href="#"><button class="btn btn-primary">see more</button></a>
+<p><h1><a href="#"> Return device</a><div id="corner">Published:22 August 2015</div></h1><h1  id="text"> If you are not happy with the device you may return it within 7 working days ...<a href="#"><button class="btn btn-primary" id="text">see more</button></a>
 
 </p>
 </div>
@@ -352,6 +362,7 @@ textarea:focus {
     <div class="form-group">
     <label for="usr">Complaint Description:</label>
     <input type="text" class="form-control" placeholder = "agent-type message"id="m"><button id="chat" button type="button" class="btn btn-primary">Send</button>
+<a href="/"><button  class="btn btn-primary" >Sign Out</button></a>
   </div>
 </div>
 </div>
@@ -369,4 +380,41 @@ $(document).ready(
 </script>
 <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script>
+
+  var socket = io();
+   $('#chat').click(function(){
+       //socket.emit('chat message', );
+       //$('#m').val('');
+
+       var parts = $('#m').val().split("-");
+
+       var chatData = {
+          username : parts[0].trim(),
+          msg : parts[1].trim()
+       };
+
+   socket.emit('msg-to', chatData);
+
+
+       return false;
+   });
+
+   $('#login').click(function() {
+      
+      console.log("...");
+
+      var username = $('#u').val().trim();
+
+      socket.emit('login', {username : username})
+
+   });
+
+  socket.on('too', function(msg){
+
+      $('#messages').append($('<li>').text(msg));
+
+  });
+    
+</script>
 </html> 

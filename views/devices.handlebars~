@@ -111,7 +111,7 @@ ul li {
     border-bottom-right-radius: 35px;
     border-top-left-radius: 35px;
     -webkit-animation:lightup 3s alternate infinite;
-	-webkit-animation-play-state:running;
+    -webkit-animation-play-state:running;
 	-webkit-animation-delay:0.6s;
 	-moz-animation:lightup 3s alternate infinite;
 	-moz-animation-play-state:running;
@@ -130,7 +130,7 @@ ul li {
 
 		<ul>
 			<li>
-             <p id="agentp"> If the device is not responding please check that you have a valid internet conection and check if you have data bundles.</p>
+             <p id="agentp"> If the device is not responding please check that you have a valid internet connection and check if you have data bundles.</p>
 <p id="agentp">Make sure you have inserted the correct username and reference number.</p>
 			</li>	
 		</ul>
@@ -163,11 +163,11 @@ ul li {
          type='audio/ogg; codecs=vorbis'>
  Your user agent does not support the HTML5 Audio element.
 </audio><br>
-<button id="myAudio" type="button" onclick='responsiveVoice.speak("If the device is not responding please check that you have a valid internet conection and check if you have data bundles. Make sure you have inserted the correct username and reference number.");'>Play/Stop</button>
+<button id="text" type="button" onclick='responsiveVoice.speak("If the device is not responding please check that you have a valid internet conection and check if you have data bundles. Make sure you have inserted the correct username and reference number.");'>Speak</button>
 </p>
 <br>
 <br>
-<a href="/back"><button type="button" class="btn btn-primary" align="center">BACK</button></a>
+<a href="/back"><button type="button" class="btn btn-primary" align="center" id="text">BACK</button></a>
 </div> <!-- #/wrapper -->
 <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
 <script>

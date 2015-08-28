@@ -123,7 +123,9 @@ ul li {
 	-moz-animation-play-state: paused;
 }
 
-
+#text{
+    font-size:3vh;
+}
 		</style>
 	</head>
 <body>
@@ -164,7 +166,7 @@ ul li {
          type='audio/ogg; codecs=vorbis'>
  Your user agent does not support the HTML5 Audio element.
 </audio><br>
-<button id="myAudio" type="button" onclick='responsiveVoice.speak("Ridesharing and livery drivers in the U.S. are screened through a process that includes county, federal,and multi-state criminal background checks. Uber also reviews drivers’ motor vehicle records throughout their time driving with Uber.");'>Speak</button>
+<button id="text" type="button" onclick='responsiveVoice.speak("Ridesharing and livery drivers in the U.S. are screened through a process that includes county, federal,and multi-state criminal background checks. Uber also reviews drivers’ motor vehicle records throughout their time driving with Uber.");'>Speak</button>
 </p>
 <br>
 <a href="/back"><button type="button" class="btn btn-primary" align="center">BACK</button></a>
@@ -240,5 +242,6 @@ function setFullVolume() {
     myAudio.volume = 1.0;
 } 
 </script>
+<script src='http://code.responsivevoice.org/responsivevoice.js'></script>
 </body>
 </html>

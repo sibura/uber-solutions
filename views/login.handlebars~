@@ -12,7 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <title> Login</title>
+    <title> Start Bootstrap Theme</title>
        <link rel="shortcut icon" href="https://d1a3f4spazzrp4.cloudfront.net/free-candy/images/favicon.3eb352c8f26c2652495fa86bd0e29063.ico" />
     <!-- Bootstrap Core CSS -->
     <!--link href="/login.css" rel="stylesheet" -->
