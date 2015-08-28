@@ -313,13 +313,13 @@ textarea:focus {
 <div id="container">
 <div id="content2">
 
-<p><h1><a href="#"> Issue with my device</a><div id="corner">Published:27 August 2015</div></h1><h1  id="text">Here is what to do. Call 0831235467 or email support ... </h1><a href="/devices"><button class="btn btn-primary" id="text">see more</button class="btn btn-primary"></a>
+<p><h1><a href="#"> Issue with my device</a><div id="corner">Published:27 August 2015</div></h1><h1  id="text">If the device is not responding please check that you have a valid ... </h1><a href="/devices"><button class="btn btn-primary" id="text">see more</button class="btn btn-primary"></a>
 
 </p>
 </div>
 <div id="content3">
 
-<p><h1><a href="#"> My account is not active</a><div id="corner">Published:26 August 2015</div></h1><h1  id="text"> Here is what to do. Call 0831235467 or email support@u ...</h1><a href="#"><button class="btn btn-primary" id="text">see more</button></a>
+<p><h1><a href="#"> My account is not active</a><div id="corner">Published:26 August 2015</div></h1><h1  id="text"> Here is what to do. Call 0831235467 or email support@u ...</h1><a href="/account"><button class="btn btn-primary" id="text">see more</button></a>
 
 </p>
 </div>
