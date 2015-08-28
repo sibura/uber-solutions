@@ -133,7 +133,7 @@ ul li {
 
 		<ul>
 			<li>
-             <p id="agentp"> Here is is what to do. Call 0831235467 or email support@uber.com with your username and reference number for an agent to activate your account</p>
+             <p id="agentp"> Here is is what to do. Call 0831235467 or email support@uber.com with your username and reference number for an agent to activate your account.</p>
 			</li>	
 		</ul>
    <p id="agent">Agent:Lindani Pani</p>
@@ -153,8 +153,8 @@ ul li {
       </span>
     </p>
      <video width="350" height="180" controls>
-         <source src="IMG_7123.mp4" type="video/mp4">
-         <source src="IMG_7123.ogg" type="video/ogg">
+         <source src="Agent.p.mp4" type="video/mp4">
+         <source src="Agent.p.ogg" type="video/ogg">
           Your browser does not support the video tag.
      </video>
 
@@ -165,7 +165,7 @@ ul li {
          type='audio/ogg; codecs=vorbis'>
  Your user agent does not support the HTML5 Audio element.
 </audio><br>
-<button id="text" type="button" onclick='responsiveVoice.speak("Here is is what to do. Call 0831235467 or email support@uber.com with your username and reference number for an agent to activate your account.");'>Speak</button>
+<button id="text" type="button" onclick='responsiveVoice.speak("Here is what to do. Call 0831235467 or email support@uber.com with your username and reference number for an agent to activate your account.");'>Speak</button>
 </p>
 <br>
 <br>

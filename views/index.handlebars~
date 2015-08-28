@@ -311,16 +311,15 @@ textarea:focus {
 <body>
 <header class="contextual"><div class="logo"></div></header>
 <div id="container">
-<div id="content3">
+<div id="content2">
 
-<p><h1><a href="/account"> My account is not active</a><div id="corner">Published:26 August 2015</div></h1><h1  id="text"> Here is is what to do. Call 0831235467 or email support ...</h1><a href="#"><button class="btn btn-primary" id="text">see more</button></a>
+<p><h1><a href="#"> Issue with my device</a><div id="corner">Published:27 August 2015</div></h1><h1  id="text">Here is what to do. Call 0831235467 or email support ... </h1><a href="/devices"><button class="btn btn-primary" id="text">see more</button class="btn btn-primary"></a>
 
 </p>
 </div>
+<div id="content3">
 
-<div id="content2">
-
-<p><h1><a href="#"> Issue with my device</a><div id="corner">Published:27 August 2015</div></h1><h1  id="text">If the device is not responding please check that you have a valid ... </h1><a href="/devices"><button class="btn btn-primary" id="text">see more</button class="btn btn-primary"></a>
+<p><h1><a href="#"> My account is not active</a><div id="corner">Published:26 August 2015</div></h1><h1  id="text"> Here is what to do. Call 0831235467 or email support@u ...</h1><a href="#"><button class="btn btn-primary" id="text">see more</button></a>
 
 </p>
 </div>
@@ -330,6 +329,8 @@ textarea:focus {
 
 </p>
 </div>
+
+
 <div id="content4">
 
 <p><h1><a href="#"> Payment issue</a><div id="corner">Published:27 September 2015</div></h1><h1  id="text"> The account may be inactive for a few minutes when there is alot of traffic ...</h1><a href="#"><button class="btn btn-primary" id="text">see more</button></a>
@@ -357,11 +358,11 @@ textarea:focus {
 <ul id="messages"></ul>
       <div class="form-group">
         <label for="usr">User:</label>
-        <input type="text" placeholder = "username less than 25 letters"maxlength="25"class="form-control" id="u"><button id="login" button type="button" class="btn btn-default">Submit</button>
+        <input type="text" value="{{username}}" maxlength="25"class="form-control" id="u"><button id="login" button type="button" class="btn btn-default">Login</button>
 
     <div class="form-group">
     <label for="usr">Complaint Description:</label>
-    <input type="text" class="form-control" placeholder = "agent-type message"id="m"><button id="chat" button type="button" class="btn btn-primary">Send</button>
+    <input type="text" class="form-control" placeholder = "type a complaint please"id="m"><button id="chat" button type="button" class="btn btn-primary">Send</button>
 <a href="/"><button  class="btn btn-primary" >Sign Out</button></a>
   </div>
 </div>
@@ -387,12 +388,22 @@ $(document).ready(
        //socket.emit('chat message', );
        //$('#m').val('');
 
-       var parts = $('#m').val().split("-");
+       var me = '{{username}}';
+
+       var message = $('#m').val();
+       var username = "";
+
+       if (me === "agent1")
+          username = "driver1";
+        else
+          username = "agent1";
 
        var chatData = {
-          username : parts[0].trim(),
-          msg : parts[1].trim()
+          username : username,
+          msg : me + " : " + message
        };
+
+       $('#messages').append($('<li>').text(chatData.msg));
 
    socket.emit('msg-to', chatData);
 

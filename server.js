@@ -10,7 +10,7 @@ var session = require('express-session')
 
 var server = http.createServer(app);
 var io = require('socket.io').listen(server);  //pass a http.Server instance
-    server.listen(5002);  //
+    server.listen(6003);  //
 
 
 app.use(express.static('public'));
